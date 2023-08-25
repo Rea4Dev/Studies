@@ -72,6 +72,14 @@ p{
   animation-play-state:paused;
   transform:scale(1.1);
 }
+h1:hover{
+  animation-play-state:paused;
+  transform:scale(1.1);
+}
+h2:hover{
+  animation-play-state:paused;
+  transform:scale(1.1);
+}
 @keyframes white{
   from{
     text-shadow:2px 2px 10px;
@@ -93,6 +101,10 @@ p{
   transition: transform 0.5s ease-in-out;
 }
 .red-neon:hover{
+  animation-play-state:paused;
+  transform:scale(1.01);
+}
+h3:hover{
   animation-play-state:paused;
   transform:scale(1.01);
 }
@@ -118,6 +130,10 @@ p{
   animation-play-state:paused;
   transform:scale(1.01);
 }
+h4:hover{
+  animation-play-state:paused;
+  transform:scale(1.01);
+}
 @keyframes blue{
   from{
     text-shadow:2px 2px 10px #6990C3;
@@ -139,21 +155,25 @@ p{
     animation-play-state:paused;
     transform:scale(1.01);
   }
+  h5:hover{
+    animation-play-state:paused;
+    transform:scale(1.01);
+  }
   @keyframes green{
     from{
-      text-shadow:2px 2px 10px #989F7A;
+      text-shadow:2px 2px 10px #5AA695;
     }
     50%{
-      text-shadow:2px 2px 15px #989F7A;
+      text-shadow:2px 2px 15px #5AA695;
     }
     to{
-      text-shadow:2px 2px 20px #989F7A;
+      text-shadow:2px 2px 20px #5AA695;
     }
 }
 
 .sub{
   animation: sub 1s linear infinite alternate;
-  color:#5AA695;
+  color:#989F7A; /* 5AA695 */
   transition: transform 0.5s ease-in-out;
   font-size: 150%;
   font-weight: 500;
@@ -164,12 +184,12 @@ p{
 }
 @keyframes sub{
   from{
-    text-shadow:2px 2px 10px #5AA695;
+    text-shadow:2px 2px 10px #989F7A;
   }
   50%{
-    text-shadow:2px 2px 15px #5AA695;
+    text-shadow:2px 2px 15px #989F7A;
   }
   to{
-    text-shadow:2px 2px 20px #5AA695;
+    text-shadow:2px 2px 20px #989F7A;
   }
 }
