@@ -1,4 +1,4 @@
-/* <link rel="stylesheet" href="../Jupyter Style/style.css"> <p><span></span> */
+/* <link rel="stylesheet" href="../Jupyter Style/style.css">  */
 * {
   padding: 0;
   border: 0;
@@ -56,6 +56,14 @@ h5{
   transition: transform 0.5s ease-in-out;
   /* text-align:center; */
   font-weight: 700;
+}
+h6{
+  animation: sub 1s linear infinite alternate;
+  color:#989F7A;
+  transition: transform 0.5s ease-in-out;
+  /* text-align:center; */
+  font-weight: 700;
+  font-size: 110%;
 }
 p{
   /* text-align: center; */
@@ -159,6 +167,10 @@ h4:hover{
     animation-play-state:paused;
     transform:scale(1.01);
   }
+  h6:hover{
+    animation-play-state:paused;
+    transform:scale(1.01);
+  }
   @keyframes green{
     from{
       text-shadow:2px 2px 10px #5AA695;
@@ -175,7 +187,7 @@ h4:hover{
   animation: sub 1s linear infinite alternate;
   color:#989F7A; /* 5AA695 */
   transition: transform 0.5s ease-in-out;
-  font-size: 150%;
+  font-size: 115%;
   font-weight: 500;
 }
 .sub:hover{
