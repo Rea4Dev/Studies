@@ -37,7 +37,7 @@ h3{
   animation: red 1s linear infinite alternate;
   color:#C82F4B;
   transition: transform 0.5s ease-in-out;
-  /* text-align:center; */
+  text-align:center;
   font-weight: 700;
 }
 .green{
