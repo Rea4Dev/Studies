@@ -20,32 +20,42 @@ L_main0:
 	GOTO       L_main2
 ;MyProject.c,12 :: 		GPIO.F1 = 1;
 	BSF        GPIO+0, 1
-;MyProject.c,13 :: 		delay_ms(2000);
-	MOVLW      11
-	MOVWF      R11+0
-	MOVLW      38
+;MyProject.c,13 :: 		delay_ms(100);
+	MOVLW      130
 	MOVWF      R12+0
-	MOVLW      93
+	MOVLW      221
 	MOVWF      R13+0
 L_main3:
 	DECFSZ     R13+0, 1
 	GOTO       L_main3
 	DECFSZ     R12+0, 1
 	GOTO       L_main3
-	DECFSZ     R11+0, 1
-	GOTO       L_main3
 	NOP
 	NOP
-;MyProject.c,14 :: 		}
-	GOTO       L_main4
-L_main2:
-;MyProject.c,16 :: 		GPIO.F1 = 0;
+;MyProject.c,14 :: 		GPIO.F1 = 0;
 	BCF        GPIO+0, 1
-;MyProject.c,17 :: 		}
+;MyProject.c,15 :: 		delay_ms(100);
+	MOVLW      130
+	MOVWF      R12+0
+	MOVLW      221
+	MOVWF      R13+0
 L_main4:
-;MyProject.c,18 :: 		}
-	GOTO       L_main0
+	DECFSZ     R13+0, 1
+	GOTO       L_main4
+	DECFSZ     R12+0, 1
+	GOTO       L_main4
+	NOP
+	NOP
+;MyProject.c,16 :: 		}
+	GOTO       L_main5
+L_main2:
+;MyProject.c,18 :: 		GPIO.F1 = 0;
+	BCF        GPIO+0, 1
 ;MyProject.c,19 :: 		}
+L_main5:
+;MyProject.c,20 :: 		}
+	GOTO       L_main0
+;MyProject.c,21 :: 		}
 L_end_main:
 	GOTO       $+0
 ; end of _main

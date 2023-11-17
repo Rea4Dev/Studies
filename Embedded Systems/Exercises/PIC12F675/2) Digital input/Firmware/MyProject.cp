@@ -11,7 +11,9 @@ void main() {
  while(1){
  if (GPIO.F0 == 1){
  GPIO.F1 = 1;
- delay_ms(2000);
+ delay_ms(100);
+ GPIO.F1 = 0;
+ delay_ms(100);
  }
  else{
  GPIO.F1 = 0;
