@@ -6,7 +6,7 @@ void main() {
 
           TRISIO0_bit = 1; //* set by digital input. Can only detect two states, 0 and 1.
           TRISIO1_bit = 0; //* set by digital output to the led. You can controll by 1 and 0.
-          
+
           GPIO = 0;      //* all pins start with 0
 
           while(1){
